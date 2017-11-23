@@ -37,6 +37,8 @@ class RegistrationViewController: UIViewController, CallbackToken {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "UsersList")
             self.present(controller, animated: true, completion: nil)
+        } else{
+            UIAlertController.errorMessage(controler: self, message: error)
         }
     }
 }

@@ -27,4 +27,14 @@ extension UIAlertController {
         })
         controler.present(alert, animated: false, completion: nil)
     }
+    
+    class func errorMessage(controler: UIViewController,message: String){
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
+        { action -> Void in
+            alert.dismiss(animated: false, completion: nil)
+        })
+        controler.present(alert, animated: false, completion: nil)
+    }
 }
