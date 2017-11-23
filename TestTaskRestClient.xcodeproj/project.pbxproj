@@ -7,21 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73A942A830153EFB57A1C4A7 /* Pods_TestTaskRestClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CD8D67CE5049C5D00CB6AC /* Pods_TestTaskRestClient.framework */; };
 		964FE1A91FC68E37009FEBCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FE1A81FC68E37009FEBCE /* AppDelegate.swift */; };
-		964FE1AB1FC68E37009FEBCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FE1AA1FC68E37009FEBCE /* ViewController.swift */; };
 		964FE1AE1FC68E37009FEBCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964FE1AC1FC68E37009FEBCE /* Main.storyboard */; };
 		964FE1B01FC68E37009FEBCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964FE1AF1FC68E37009FEBCE /* Assets.xcassets */; };
 		964FE1B31FC68E37009FEBCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964FE1B11FC68E37009FEBCE /* LaunchScreen.storyboard */; };
+		964FE1BB1FC691ED009FEBCE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FE1BA1FC691ED009FEBCE /* LoginViewController.swift */; };
+		964FE1BD1FC69211009FEBCE /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FE1BC1FC69211009FEBCE /* RegistrationViewController.swift */; };
+		964FE1BF1FC69227009FEBCE /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FE1BE1FC69227009FEBCE /* UsersListViewController.swift */; };
+		964FE1C11FC6925E009FEBCE /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FE1C01FC6925E009FEBCE /* ApiManager.swift */; };
+		964FE1CB1FC6C48E009FEBCE /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FE1CA1FC6C48E009FEBCE /* AuthModel.swift */; };
+		964FE1CD1FC6DAB0009FEBCE /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FE1CC1FC6DAB0009FEBCE /* Protocols.swift */; };
+		969518C61FC6ED98009B10EA /* UsersListViewController+Delegats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969518C51FC6ED98009B10EA /* UsersListViewController+Delegats.swift */; };
+		969518C81FC72CBA009B10EA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969518C71FC72CBA009B10EA /* Reachability.swift */; };
+		969518CB1FC72EAD009B10EA /* UIAlertControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969518CA1FC72EAD009B10EA /* UIAlertControllerFactory.swift */; };
+		969518CD1FC73519009B10EA /* LoginViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969518CC1FC73519009B10EA /* LoginViewController+Keyboard.swift */; };
+		969518CF1FC7355B009B10EA /* RegistrationViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969518CE1FC7355B009B10EA /* RegistrationViewController+Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		444457EE9125DE3DDCB52090 /* Pods-TestTaskRestClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskRestClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskRestClient/Pods-TestTaskRestClient.release.xcconfig"; sourceTree = "<group>"; };
+		44CD8D67CE5049C5D00CB6AC /* Pods_TestTaskRestClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskRestClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		964FE1A51FC68E37009FEBCE /* TestTaskRestClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskRestClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		964FE1A81FC68E37009FEBCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		964FE1AA1FC68E37009FEBCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		964FE1AD1FC68E37009FEBCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		964FE1AF1FC68E37009FEBCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		964FE1B21FC68E37009FEBCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		964FE1B41FC68E37009FEBCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		964FE1BA1FC691ED009FEBCE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		964FE1BC1FC69211009FEBCE /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		964FE1BE1FC69227009FEBCE /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		964FE1C01FC6925E009FEBCE /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		964FE1CA1FC6C48E009FEBCE /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		964FE1CC1FC6DAB0009FEBCE /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		969518C51FC6ED98009B10EA /* UsersListViewController+Delegats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsersListViewController+Delegats.swift"; sourceTree = "<group>"; };
+		969518C71FC72CBA009B10EA /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		969518CA1FC72EAD009B10EA /* UIAlertControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerFactory.swift; sourceTree = "<group>"; };
+		969518CC1FC73519009B10EA /* LoginViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		969518CE1FC7355B009B10EA /* RegistrationViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegistrationViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		E391CB5CDB8D8567EEB27352 /* Pods-TestTaskRestClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskRestClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskRestClient/Pods-TestTaskRestClient.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A942A830153EFB57A1C4A7 /* Pods_TestTaskRestClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3327B38665CB61864326E12E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E391CB5CDB8D8567EEB27352 /* Pods-TestTaskRestClient.debug.xcconfig */,
+				444457EE9125DE3DDCB52090 /* Pods-TestTaskRestClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		74F8C7D5230A27A87756D993 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44CD8D67CE5049C5D00CB6AC /* Pods_TestTaskRestClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		964FE19C1FC68E37009FEBCE = {
 			isa = PBXGroup;
 			children = (
 				964FE1A71FC68E37009FEBCE /* TestTaskRestClient */,
 				964FE1A61FC68E37009FEBCE /* Products */,
+				3327B38665CB61864326E12E /* Pods */,
+				74F8C7D5230A27A87756D993 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +98,72 @@
 		964FE1A71FC68E37009FEBCE /* TestTaskRestClient */ = {
 			isa = PBXGroup;
 			children = (
+				969518D01FC739E0009B10EA /* model */,
+				969518C91FC72E8F009B10EA /* utils */,
+				964FE1C91FC6B6F3009FEBCE /* api */,
+				964FE1C81FC6B6E7009FEBCE /* users */,
+				964FE1C71FC6B6C1009FEBCE /* registration */,
+				964FE1C61FC6B6BA009FEBCE /* login */,
 				964FE1A81FC68E37009FEBCE /* AppDelegate.swift */,
-				964FE1AA1FC68E37009FEBCE /* ViewController.swift */,
 				964FE1AC1FC68E37009FEBCE /* Main.storyboard */,
 				964FE1AF1FC68E37009FEBCE /* Assets.xcassets */,
 				964FE1B11FC68E37009FEBCE /* LaunchScreen.storyboard */,
 				964FE1B41FC68E37009FEBCE /* Info.plist */,
 			);
 			path = TestTaskRestClient;
+			sourceTree = "<group>";
+		};
+		964FE1C61FC6B6BA009FEBCE /* login */ = {
+			isa = PBXGroup;
+			children = (
+				964FE1BA1FC691ED009FEBCE /* LoginViewController.swift */,
+				969518CC1FC73519009B10EA /* LoginViewController+Keyboard.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		964FE1C71FC6B6C1009FEBCE /* registration */ = {
+			isa = PBXGroup;
+			children = (
+				964FE1BC1FC69211009FEBCE /* RegistrationViewController.swift */,
+				969518CE1FC7355B009B10EA /* RegistrationViewController+Keyboard.swift */,
+			);
+			path = registration;
+			sourceTree = "<group>";
+		};
+		964FE1C81FC6B6E7009FEBCE /* users */ = {
+			isa = PBXGroup;
+			children = (
+				964FE1BE1FC69227009FEBCE /* UsersListViewController.swift */,
+				969518C51FC6ED98009B10EA /* UsersListViewController+Delegats.swift */,
+			);
+			path = users;
+			sourceTree = "<group>";
+		};
+		964FE1C91FC6B6F3009FEBCE /* api */ = {
+			isa = PBXGroup;
+			children = (
+				969518C71FC72CBA009B10EA /* Reachability.swift */,
+				964FE1C01FC6925E009FEBCE /* ApiManager.swift */,
+				964FE1CC1FC6DAB0009FEBCE /* Protocols.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		969518C91FC72E8F009B10EA /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				969518CA1FC72EAD009B10EA /* UIAlertControllerFactory.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		969518D01FC739E0009B10EA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				964FE1CA1FC6C48E009FEBCE /* AuthModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 964FE1B71FC68E37009FEBCE /* Build configuration list for PBXNativeTarget "TestTaskRestClient" */;
 			buildPhases = (
+				BE4EC002D480FB0AC27CD051 /* [CP] Check Pods Manifest.lock */,
 				964FE1A11FC68E37009FEBCE /* Sources */,
 				964FE1A21FC68E37009FEBCE /* Frameworks */,
 				964FE1A31FC68E37009FEBCE /* Resources */,
+				91D0DEA08B8D83A4B3DC35A1 /* [CP] Embed Pods Frameworks */,
+				CD608B1B5D87608AE19D8E29 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +236,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		91D0DEA08B8D83A4B3DC35A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskRestClient/Pods-TestTaskRestClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskRestClient/Pods-TestTaskRestClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE4EC002D480FB0AC27CD051 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestTaskRestClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD608B1B5D87608AE19D8E29 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskRestClient/Pods-TestTaskRestClient-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskRestClient/Pods-TestTaskRestClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		964FE1A11FC68E37009FEBCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964FE1AB1FC68E37009FEBCE /* ViewController.swift in Sources */,
+				964FE1CD1FC6DAB0009FEBCE /* Protocols.swift in Sources */,
+				969518CB1FC72EAD009B10EA /* UIAlertControllerFactory.swift in Sources */,
+				969518CF1FC7355B009B10EA /* RegistrationViewController+Keyboard.swift in Sources */,
+				964FE1BB1FC691ED009FEBCE /* LoginViewController.swift in Sources */,
+				969518C61FC6ED98009B10EA /* UsersListViewController+Delegats.swift in Sources */,
+				964FE1BF1FC69227009FEBCE /* UsersListViewController.swift in Sources */,
+				969518CD1FC73519009B10EA /* LoginViewController+Keyboard.swift in Sources */,
+				964FE1BD1FC69211009FEBCE /* RegistrationViewController.swift in Sources */,
+				969518C81FC72CBA009B10EA /* Reachability.swift in Sources */,
+				964FE1C11FC6925E009FEBCE /* ApiManager.swift in Sources */,
+				964FE1CB1FC6C48E009FEBCE /* AuthModel.swift in Sources */,
 				964FE1A91FC68E37009FEBCE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,10 +465,13 @@
 		};
 		964FE1B81FC68E37009FEBCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E391CB5CDB8D8567EEB27352 /* Pods-TestTaskRestClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7ZGRSDQSQ;
 				INFOPLIST_FILE = TestTaskRestClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iv.com.TestTaskRestClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,10 +482,13 @@
 		};
 		964FE1B91FC68E37009FEBCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 444457EE9125DE3DDCB52090 /* Pods-TestTaskRestClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7ZGRSDQSQ;
 				INFOPLIST_FILE = TestTaskRestClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iv.com.TestTaskRestClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
