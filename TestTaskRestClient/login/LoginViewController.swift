@@ -17,20 +17,15 @@ class LoginViewController: UIViewController, CallbackToken {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var buttonConstrein: NSLayoutConstraint!
     @IBAction func login(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "UsersList")
-        self.present(controller, animated: true, completion: nil)
-        
-        
-//        if (!Reachability.isConnectedToNetwork()){
-//            UIAlertController.notInternet(controler: self)
-//            return
-//        }
-//        api.login(auth:
-//            AuthModel(userName: userName.text!,
-//                      password: password.text!,
-//                      email: email.text!),
-//                  delegate: self)
+        if (!Reachability.isConnectedToNetwork()){
+            UIAlertController.notInternet(controler: self)
+            return
+        }
+        api.login(auth:
+            AuthModel(userName: userName.text!,
+                      password: password.text!,
+                      email: email.text!),
+                  delegate: self)
         
     }
     @IBAction func faceBookAuth(_ sender: Any) {
