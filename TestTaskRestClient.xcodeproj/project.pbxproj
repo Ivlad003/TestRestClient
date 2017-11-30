@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		73A942A830153EFB57A1C4A7 /* Pods_TestTaskRestClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CD8D67CE5049C5D00CB6AC /* Pods_TestTaskRestClient.framework */; };
+		962E7E071FCFEFF900EE6FB0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E7E061FCFEFF900EE6FB0 /* User.swift */; };
+		962E7E0A1FCFF0E100EE6FB0 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E7E091FCFF0E100EE6FB0 /* JsonParser.swift */; };
 		964FE1A91FC68E37009FEBCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FE1A81FC68E37009FEBCE /* AppDelegate.swift */; };
 		964FE1AE1FC68E37009FEBCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964FE1AC1FC68E37009FEBCE /* Main.storyboard */; };
 		964FE1B01FC68E37009FEBCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964FE1AF1FC68E37009FEBCE /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 /* Begin PBXFileReference section */
 		444457EE9125DE3DDCB52090 /* Pods-TestTaskRestClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskRestClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskRestClient/Pods-TestTaskRestClient.release.xcconfig"; sourceTree = "<group>"; };
 		44CD8D67CE5049C5D00CB6AC /* Pods_TestTaskRestClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskRestClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		962E7E061FCFEFF900EE6FB0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		962E7E091FCFF0E100EE6FB0 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		964FE1A51FC68E37009FEBCE /* TestTaskRestClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskRestClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		964FE1A81FC68E37009FEBCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		964FE1AD1FC68E37009FEBCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 		969518C91FC72E8F009B10EA /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				962E7E091FCFF0E100EE6FB0 /* JsonParser.swift */,
 				969518CA1FC72EAD009B10EA /* UIAlertControllerFactory.swift */,
 			);
 			path = utils;
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				964FE1CA1FC6C48E009FEBCE /* AuthModel.swift */,
+				962E7E061FCFEFF900EE6FB0 /* User.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -319,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				962E7E071FCFEFF900EE6FB0 /* User.swift in Sources */,
 				964FE1CD1FC6DAB0009FEBCE /* Protocols.swift in Sources */,
 				969518CB1FC72EAD009B10EA /* UIAlertControllerFactory.swift in Sources */,
 				969518CF1FC7355B009B10EA /* RegistrationViewController+Keyboard.swift in Sources */,
@@ -330,6 +337,7 @@
 				969518C81FC72CBA009B10EA /* Reachability.swift in Sources */,
 				964FE1C11FC6925E009FEBCE /* ApiManager.swift in Sources */,
 				964FE1CB1FC6C48E009FEBCE /* AuthModel.swift in Sources */,
+				962E7E0A1FCFF0E100EE6FB0 /* JsonParser.swift in Sources */,
 				964FE1A91FC68E37009FEBCE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

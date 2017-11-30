@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import RealmSwift
 
 class ApiManager{
     let host = "http://46.101.73.111:7000"
@@ -77,24 +78,34 @@ class ApiManager{
         }
     }
     
-    // Пока не работает Api :(
-    func users(){
+    func users(delegate: CallbackUsers){
         if (!Reachability.isConnectedToNetwork()){
             return
         }
-        let headers: [String: String] = [
-            "Authorization" : "Token"]
+        let defaults = UserDefaults.standard
+        let token = defaults.string(forKey: "token")
+        var request = URLRequest(url: URL(string:"\(host)/authorization/all_users/")!)
+        request.setValue("Authorization", forHTTPHeaderField:  token!)
         
-        Alamofire.request(host+"/authorization/all_users/",method: .post, parameters: [:], encoding: JSONEncoding.default, headers: headers)
-            .responseJSON {response in
-                switch response.result {
-                case .success(let data):
-                    let json = JSON(data)
-                    print(json)
-                case .failure(let error):
-                    print("Request failed with error: \(error)")
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let d = data{
+                let users = JsonParser.users(data: d)
+                let realm = try! Realm()
+                try! realm.write {
+                    for user in users{
+                        realm.add(user, update: true)
+                    }
+                    DispatchQueue.main.async {
+                        if error != nil{
+                            delegate.error(error: error!)
+                        }else{
+                            delegate.usersLoaded()
+                        }
+                    }
                 }
-        }
+                
+            }
+        }.resume()
     }
     
     func tokenParse(response: DataResponse<Any>,delegate: CallbackToken){

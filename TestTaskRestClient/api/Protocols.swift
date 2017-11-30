@@ -13,5 +13,6 @@ protocol CallbackToken{
 }
 
 protocol CallbackUsers{
-    func token(users: [NSObject],error: String)
+    func usersLoaded()
+    func error(error: Error)
 }
